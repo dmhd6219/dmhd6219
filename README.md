@@ -4,6 +4,8 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Innopolis+University+BS22++student" alt="Typing SVG" /></a>
 </h3>
 
+Graduated from Yandex.Lyceum, entering the top graduates, crazy about programming
+
 Languages :
 <table>
 	<tbody>
