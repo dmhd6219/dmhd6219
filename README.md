@@ -5,7 +5,8 @@
 </h3>
 <p align="center">Graduated from Yandex.Lyceum, entering the top graduates</p>
 
-Languages :
+<div align="center">
+	Languages :
 <table>
 	<tbody>
 		<tr>
@@ -22,6 +23,8 @@ Languages :
 		</tr>
 	</tbody>
 </table>
+
+</div>
 
 ![Snake animation](https://github.com/dmhd6219/dmhd6219/blob/output/github-contribution-grid-snake.svg)
 
