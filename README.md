@@ -1,6 +1,6 @@
 <h1 align="center">Hi there, I'm <a href="https://svyatoslavsvyatkin.ru/" target="_blank">Svyatoslav</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">Computer Science student at Innopolis University 🇷🇺</h3>
+<h3 align="center">Computer Science student at Innopolis University</h3>
 
 ![Snake animation](https://github.com/dmhd6219/dmhd6219/blob/output/github-contribution-grid-snake.svg)
 
