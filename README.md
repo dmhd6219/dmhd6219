@@ -23,7 +23,7 @@
 		</tr>
 		<tr>
 			<td align="center">C++</td>
-			<td><a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cpp/cpp-original.svg" alt="c" width="40" height="40"/> </a></td>
+			<td><a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="c++" width="40" height="40"/> </a></td>
 		</tr>
 	</tbody>
 </table>
