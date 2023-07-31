@@ -43,7 +43,7 @@ const MySkills = () => {
                         I have a wide range experience
                         in <SecondaryText>Front-End</SecondaryText> and <SecondaryText>Back-End</SecondaryText> development.
                         As for Front-End, I am proficient in HTML, CSS3, Javascript, Typescript, Tailwind CSS,
-                        React and NextJS, Svelte and SvelteKit. I've build responsive applications, and I am familiar
+                        React and NextJS, Svelte and SvelteKit. I've built responsive applications, and I am familiar
                         with the latest web development trends.
                     </ParaText>
 
