@@ -7,7 +7,8 @@ import {
     ParaText,
     SecondaryText
 } from "../styles/Global.styled";
-import {FaGithub,FaSquareLastfm, FaTelegram} from "react-icons/fa6";
+import {FaGithub, FaSquareLastfm, FaTelegram} from "react-icons/fa6";
+
 
 const Showcase = () => {
     return (
@@ -21,6 +22,8 @@ const Showcase = () => {
             <FlexContainer
                 fullWidthChild={true}>
                 <div>
+
+                    {/* Greetings */}
                     <Heading as="h4" size="h4">
                         Hello!
                     </Heading>
@@ -38,6 +41,7 @@ const Showcase = () => {
                         I'm confident that I can quickly become a valuable member of your team.
                     </ParaText>
 
+                    {/* Icons */}
                     <FlexContainer gap="20px">
                         <IconContainer color="secondary" size="1.5rem">
                             <FaGithub/>
@@ -51,6 +55,7 @@ const Showcase = () => {
                             <FaSquareLastfm/>
                         </IconContainer>
                     </FlexContainer>
+
                 </div>
             </FlexContainer>
         </PaddingContainer>
