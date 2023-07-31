@@ -37,5 +37,3 @@
 </table>
 
 </div>
-
-![Snake animation](https://github.com/dmhd6219/dmhd6219/blob/output/github-contribution-grid-snake.svg)
