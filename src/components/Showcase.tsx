@@ -1,5 +1,13 @@
 import React from 'react'
-import {FlexContainer, Heading, PaddingContainer} from "../styles/Global.styled";
+import {
+    FlexContainer,
+    Heading,
+    IconContainer,
+    PaddingContainer,
+    ParaText,
+    SecondaryText
+} from "../styles/Global.styled";
+import {FaGithub,FaSquareLastfm, FaTelegram} from "react-icons/fa6";
 
 const Showcase = () => {
     return (
@@ -11,12 +19,38 @@ const Showcase = () => {
             bottom="10%"
         >
             <FlexContainer
-                fullWidthChild={true}
-                align="center">
+                fullWidthChild={true}>
                 <div>
                     <Heading as="h4" size="h4">
                         Hello!
                     </Heading>
+
+                    <Heading as="h1" size="h1" top="0.5rem" bottom="1rem">
+                        I'm <SecondaryText>Svyatoslav Svyatkin</SecondaryText>
+                    </Heading>
+
+                    <Heading as="h3" size="h3">
+                        I'm a <SecondaryText>Full-Stack Developer</SecondaryText>
+                    </Heading>
+
+                    <ParaText as="p" top="2rem" bottom="4rem">
+                        I have no working experience but a strong passion and eagerness to learn.
+                        I'm confident that I can quickly become a valuable member of your team.
+                    </ParaText>
+
+                    <FlexContainer gap="20px">
+                        <IconContainer color="secondary" size="1.5rem">
+                            <FaGithub/>
+                        </IconContainer>
+
+                        <IconContainer color="secondary" size="1.5rem">
+                            <FaTelegram/>
+                        </IconContainer>
+
+                        <IconContainer color="secondary" size="1.5rem">
+                            <FaSquareLastfm/>
+                        </IconContainer>
+                    </FlexContainer>
                 </div>
             </FlexContainer>
         </PaddingContainer>
