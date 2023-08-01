@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm <a href="https://svyatoslavsvyatkin.ru/" target="_blank">Svyatoslav</a> 
+<h1 align="center">Hi there, I'm <a href="https://dmhd6219.netlify.app/" target="_blank">Svyatoslav</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Innopolis+University+BS22++student" alt="Typing SVG" /></a>
