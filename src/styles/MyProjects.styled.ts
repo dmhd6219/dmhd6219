@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const TechStackCard = styled.div`
     display: inline-block;
   background-color: ${({theme}) => theme.colors.secondary};
-  color : #fff;
+  color : ${({theme}) => theme.colors.white};
   padding: 0.3rem 1rem;
   border-radius: 5px;
 
@@ -24,7 +24,7 @@ export const ProjectImageContainer = styled.div<ProjectImageContainerType>`
 `
 
 export const ProjectImage = styled.img`
-  border: 1px solid #fff;
+  border: 1px solid ${({theme}) => theme.colors.white};
   width: 80%;
   height: 300px;
   object-fit: cover;
