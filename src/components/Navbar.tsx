@@ -23,9 +23,11 @@ const Navbar = () => {
             <PaddingContainer
                 top="1.2rem"
                 bottom="1.2rem"
+                responsiveLeft="1rem"
+                responsiveRight="1rem"
             >
                 <Container>
-                    <FlexContainer justify="space-between">
+                    <FlexContainer justify="space-between" responsiveFlex={true}>
                         {/* Left Section */}
                         <Logo>
                             dmhd6219

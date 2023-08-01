@@ -18,6 +18,10 @@ const Showcase = () => {
             right="10%"
             top="15%"
             bottom="10%"
+            responsiveLeft="1rem"
+            responsiveRight="1rem"
+            responsiveTop="8rem"
+
         >
             <FlexContainer
                 fullWidthChild={true}>
@@ -29,7 +33,7 @@ const Showcase = () => {
                     </Heading>
 
                     <Heading as="h1" size="h1" top="0.5rem" bottom="1rem">
-                        I'm <SecondaryText>Svyatoslav Svyatkin</SecondaryText>
+                        My name is <SecondaryText>Svyatoslav Svyatkin</SecondaryText>
                     </Heading>
 
                     <Heading as="h3" size="h3">
@@ -42,7 +46,7 @@ const Showcase = () => {
                     </ParaText>
 
                     {/* Icons */}
-                    <FlexContainer gap="20px">
+                    <FlexContainer gap="20px" responsiveFlex={true}>
                         <IconContainer color="secondary" size="1.5rem">
                             <FaGithub/>
                         </IconContainer>

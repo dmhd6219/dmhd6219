@@ -30,8 +30,6 @@ const Project: (props : {data : ProjectDetailType}) => JSX.Element = (props) => 
                 <ParaText top="1.5rem" bottom="2rem">
                     {props.data.desc}
                 </ParaText>
-
-                <Button>Visit Website</Button>
             </div>
 
             {/* Right Section */}

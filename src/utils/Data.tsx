@@ -50,7 +50,7 @@ export const ProjectDetails : ProjectDetailType[] = [
         id : 0,
         name : "Social Network",
         desc : "Just a Social Network, built on Flask",
-        stack : ['Python', 'Flask', 'SQLAlchemy', 'HTML', 'CSS'],
+        stack : ['HTML', 'CSS', 'Python', 'Flask', 'SQLAlchemy',],
         img : SocialNetworkScreenshot
     }
 ]

@@ -8,7 +8,7 @@ const NavMenu: (props: { setOpenMenu: Function }) => JSX.Element = (props) => {
     return (
         <NavMenuContainer>
             <PaddingContainer left="5%" right="5%" top="2rem">
-                <FlexContainer justify="flex-end">
+                <FlexContainer justify="flex-end" responsiveFlex={true}>
                     <MenuIcon onClick={() => props.setOpenMenu(false)}>
                         <AiOutlineClose/>
                     </MenuIcon>
@@ -17,7 +17,7 @@ const NavMenu: (props: { setOpenMenu: Function }) => JSX.Element = (props) => {
 
             {/* Menu Items */}
             <PaddingContainer top="8%">
-                <FlexContainer direction="column" align="center">
+                <FlexContainer direction="column" align="center" responsiveFlex={true}>
                     {NavLinks.map((navLink: NavLinkType) =>
                         <MenuItem
                             key={navLink.id}
