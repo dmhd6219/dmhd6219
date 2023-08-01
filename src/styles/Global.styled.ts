@@ -135,14 +135,14 @@ export const IconContainer = styled.a<IconContainerProps>`
 `
 
 
-export interface FadeImage {
+export interface FadeImageType {
     top?: string,
     bottom?: string,
     left?: string,
     right?: string
 }
 
-export const FadeImage = styled.img<FadeImage>`
+export const FadeImage = styled.img<FadeImageType>`
   position: absolute;
   top: ${({top}) => top};
   right: ${({right}) => right};

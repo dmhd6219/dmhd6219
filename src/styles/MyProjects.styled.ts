@@ -14,10 +14,10 @@ export const TechStackCard = styled.div`
   }
 `
 
-interface ProjectImageContainer{
+interface ProjectImageContainerType{
     justify ?: string
 }
-export const ProjectImageContainer = styled.div<ProjectImageContainer>`
+export const ProjectImageContainer = styled.div<ProjectImageContainerType>`
   display: flex;
   justify-content: ${({justify}) => justify};
   

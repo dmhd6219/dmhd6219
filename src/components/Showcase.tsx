@@ -9,7 +9,6 @@ import {
 } from "../styles/Global.styled";
 import {motion} from 'framer-motion';
 
-import {FaGithub, FaSquareLastfm, FaTelegram} from "react-icons/fa6";
 import {fadeInLeftVariant} from "../utils/Variants";
 import {ContactLinks, ContactLinkType} from "../utils/Data";
 

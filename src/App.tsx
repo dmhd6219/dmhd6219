@@ -8,9 +8,7 @@ import MyProjects from "./components/MyProjects";
 import Navbar from "./components/Navbar";
 
 import TopFadeImage from './assets/top.png';
-import BottomFadeImage from './assets/bottom.png';
 import LeftFadeImage from './assets/left.png';
-import RightFadeImage from './assets/right.png';
 
 function App() {
     return (

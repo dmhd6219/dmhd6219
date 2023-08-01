@@ -3,7 +3,7 @@ import {Heading, PaddingContainer, SecondaryText} from "../styles/Global.styled"
 import {ProjectDetails, ProjectDetailType} from "../utils/Data";
 import Project from "./Project";
 import {motion} from "framer-motion";
-import {fadeInLeftVariant, fadeInTopVariant} from "../utils/Variants";
+import {fadeInTopVariant} from "../utils/Variants";
 
 const MyProjects = () => {
     return (
