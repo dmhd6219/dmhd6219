@@ -54,3 +54,26 @@ export const ProjectDetails : ProjectDetailType[] = [
         img : SocialNetworkScreenshot
     }
 ]
+
+export interface NavLinkType {
+    id : number,
+    name : string,
+    href: string
+}
+export const NavLinks: NavLinkType[] = [
+    {
+        id : 0,
+        name : 'Home',
+        href : 'Home'
+    },
+    {
+        id : 1,
+        name : 'My Skills',
+        href : 'Skills'
+    },
+    {
+        id : 2,
+        name : 'My Projects',
+        href : 'Projects'
+    },
+]

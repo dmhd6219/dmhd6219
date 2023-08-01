@@ -5,11 +5,13 @@ import {Theme} from './utils/Theme'
 import Showcase from "./components/Showcase";
 import MySkills from "./components/MySkills";
 import MyProjects from "./components/MyProjects";
+import Navbar from "./components/Navbar";
 
 function App() {
     return (
         <ThemeProvider theme={Theme}>
             <MainBody>
+                <Navbar/>
                 <Container>
                     <Showcase/>
                     <MySkills/>
