@@ -1,14 +1,13 @@
 import React from 'react'
-import {Button, FlexContainer, Heading, IconContainer, PaddingContainer, ParaText} from "../styles/Global.styled";
+import {FlexContainer, Heading, IconContainer, PaddingContainer, ParaText} from "../styles/Global.styled";
 import {FaGithub} from "react-icons/fa6";
 import {ProjectImage, ProjectImageContainer, TechStackCard} from "../styles/MyProjects.styled";
-import Project1 from '../assets/SocialNetworkScreenshot.png'
 import {ProjectDetailType} from "../utils/Data";
 import {motion} from "framer-motion";
 import {fadeInLeftVariant, fadeInRightVariant} from "../utils/Variants";
 
 
-const Project: (props : {data : ProjectDetailType}) => JSX.Element = (props) => {
+const Project: (props: { data: ProjectDetailType }) => JSX.Element = (props) => {
     return (
         <FlexContainer fullWidthChild={true} direction={props.data.id % 2 !== 0 ? 'row-reverse' : 'row'}>
 
@@ -22,9 +21,11 @@ const Project: (props : {data : ProjectDetailType}) => JSX.Element = (props) => 
                     <Heading as="h3" size="h3" bottom="1rem">
                         {props.data.name}
                     </Heading>
-                    <IconContainer color="secondary" size="2rem">
-                        <FaGithub/>
-                    </IconContainer>
+                    {props.data.git &&
+                        <IconContainer color="secondary" size="2rem" href={props.data.git}>
+                            <FaGithub/>
+                        </IconContainer>
+                    }
                 </FlexContainer>
 
                 <PaddingContainer top="1rem">
@@ -45,7 +46,7 @@ const Project: (props : {data : ProjectDetailType}) => JSX.Element = (props) => 
                 whileInView="visible"
             >
                 <ProjectImageContainer justify={props.data.id % 2 !== 0 ? 'flex-start' : 'flex-end'}>
-                    <ProjectImage src={props.data.img} alt={props.data.name}/>
+                    <ProjectImage src={props.data.img} alt={props.data.name} loading="lazy"/>
                 </ProjectImageContainer>
             </motion.div>
 

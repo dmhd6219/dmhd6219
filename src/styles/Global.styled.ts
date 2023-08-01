@@ -118,7 +118,7 @@ interface IconContainerProps {
     size?: string
 }
 
-export const IconContainer = styled.div<IconContainerProps>`
+export const IconContainer = styled.a<IconContainerProps>`
   font-size: ${({size}) => size};
   cursor: pointer;
   color: ${({color, theme}) => {
