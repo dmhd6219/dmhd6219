@@ -3,6 +3,7 @@ import {SiFastapi, SiFlask} from "react-icons/si";
 import React from "react";
 
 import SocialNetworkScreenshot from '../assets/SocialNetworkScreenshot.png'
+import SpotiStatsScreenshot from '../assets/SpotiStatsScreenshot.png';
 
 export interface SkillType {
     id: number,
@@ -52,6 +53,14 @@ export const ProjectDetails : ProjectDetailType[] = [
         desc : "Just a Social Network, built on Flask",
         stack : ['HTML', 'CSS', 'Python', 'Flask', 'SQLAlchemy',],
         img : SocialNetworkScreenshot
+    },
+
+    {
+        id : 1,
+        name : "Spotify Statistics",
+        desc : "Simple app that shows statistics of user's Spotify Account",
+        stack : ['HTML', 'CSS', 'Python', 'Flask'],
+        img : SpotiStatsScreenshot
     }
 ]
 

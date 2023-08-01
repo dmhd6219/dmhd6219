@@ -7,7 +7,10 @@ import {
     ParaText,
     SecondaryText
 } from "../styles/Global.styled";
+import {motion} from 'framer-motion';
+
 import {FaGithub, FaSquareLastfm, FaTelegram} from "react-icons/fa6";
+import {fadeInLeftVariant} from "../utils/Variants";
 
 
 const Showcase = () => {
@@ -16,7 +19,7 @@ const Showcase = () => {
             id="Home"
             left="3%"
             right="10%"
-            top="15%"
+            top="20%"
             bottom="10%"
             responsiveLeft="1rem"
             responsiveRight="1rem"
@@ -25,7 +28,11 @@ const Showcase = () => {
         >
             <FlexContainer
                 fullWidthChild={true}>
-                <div>
+                <motion.div
+                    variants={fadeInLeftVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                >
 
                     {/* Greetings */}
                     <Heading as="h4" size="h4">
@@ -60,7 +67,7 @@ const Showcase = () => {
                         </IconContainer>
                     </FlexContainer>
 
-                </div>
+                </motion.div>
             </FlexContainer>
         </PaddingContainer>
     )

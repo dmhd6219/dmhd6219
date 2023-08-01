@@ -4,14 +4,20 @@ import {FaGithub} from "react-icons/fa6";
 import {ProjectImage, ProjectImageContainer, TechStackCard} from "../styles/MyProjects.styled";
 import Project1 from '../assets/SocialNetworkScreenshot.png'
 import {ProjectDetailType} from "../utils/Data";
+import {motion} from "framer-motion";
+import {fadeInLeftVariant, fadeInRightVariant} from "../utils/Variants";
 
 
 const Project: (props : {data : ProjectDetailType}) => JSX.Element = (props) => {
     return (
-        <FlexContainer fullWidthChild={true}>
+        <FlexContainer fullWidthChild={true} direction={props.data.id % 2 !== 0 ? 'row-reverse' : 'row'}>
 
             {/* Left Section */}
-            <div>
+            <motion.div
+                variants={props.data.id % 2 !== 0 ? fadeInRightVariant : fadeInLeftVariant}
+                initial="hidden"
+                whileInView="visible"
+            >
                 <FlexContainer align="center" gap="1rem">
                     <Heading as="h3" size="h3" bottom="1rem">
                         {props.data.name}
@@ -30,14 +36,18 @@ const Project: (props : {data : ProjectDetailType}) => JSX.Element = (props) => 
                 <ParaText top="1.5rem" bottom="2rem">
                     {props.data.desc}
                 </ParaText>
-            </div>
+            </motion.div>
 
             {/* Right Section */}
-            <div>
-                <ProjectImageContainer justify="flex-end">
+            <motion.div
+                variants={props.data.id % 2 !== 0 ? fadeInLeftVariant : fadeInRightVariant}
+                initial="hidden"
+                whileInView="visible"
+            >
+                <ProjectImageContainer justify={props.data.id % 2 !== 0 ? 'flex-start' : 'flex-end'}>
                     <ProjectImage src={props.data.img} alt={props.data.name}/>
                 </ProjectImageContainer>
-            </div>
+            </motion.div>
 
 
         </FlexContainer>

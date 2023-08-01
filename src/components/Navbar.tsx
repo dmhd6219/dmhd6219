@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import {Logo, MenuIcon, NavbarContainer} from "../styles/Navbar.styled";
-import {Container, FlexContainer, PaddingContainer} from "../styles/Global.styled";
+import {Container, FlexContainer, PaddingContainer, SecondaryText} from "../styles/Global.styled";
 import {GiHamburgerMenu} from "react-icons/gi";
 import NavMenu from "./NavMenu";
 import {Theme} from "../utils/Theme";
+import {AnimatePresence, motion} from "framer-motion";
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -30,17 +31,24 @@ const Navbar = () => {
                     <FlexContainer justify="space-between" responsiveFlex={true}>
                         {/* Left Section */}
                         <Logo>
-                            dmhd6219
+                            dmhd<SecondaryText>6219</SecondaryText>
                         </Logo>
 
                         {/* Right Section */}
-                        <MenuIcon onClick={() => setOpenMenu(true)}>
+                        <MenuIcon
+                            onClick={() => setOpenMenu(true)}
+                            as={motion.a}
+                            whileHover={{scale : 1.2}}
+                        >
                             <GiHamburgerMenu/>
                         </MenuIcon>
                     </FlexContainer>
                 </Container>
 
-                {openMenu && <NavMenu setOpenMenu={setOpenMenu}/>}
+                <AnimatePresence>
+                    {openMenu && <NavMenu setOpenMenu={setOpenMenu}/>}
+                </AnimatePresence>
+
             </PaddingContainer>
         </NavbarContainer>
     )

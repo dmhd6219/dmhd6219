@@ -8,6 +8,8 @@ import {
 } from "../styles/Global.styled";
 import {SkillsCard, SkillsCardContainer} from "../styles/MySkills.styled";
 import {Skills, SkillType} from '../utils/Data'
+import {motion} from "framer-motion";
+import {fadeInLeftVariant, fadeInRightVariant} from "../utils/Variants";
 
 const MySkills = () => {
     return (
@@ -21,7 +23,12 @@ const MySkills = () => {
             <FlexContainer fullWidthChild={true} responsiveFlex={true} responsiveDirection="column-reverse">
 
                 {/* Left Section */}
-                <SkillsCardContainer>
+                <SkillsCardContainer
+                    as={motion.div}
+                    variants={fadeInLeftVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                >
                     {Skills.map((skill: SkillType) =>
                         <SkillsCard>
                             <IconContainer size="5rem" color="secondary">
@@ -34,7 +41,11 @@ const MySkills = () => {
                 </SkillsCardContainer>
 
                 {/* Right Section */}
-                <div>
+                <motion.div
+                    variants={fadeInRightVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                >
                     <Heading as="h4" size="h4">
                         MY SKILLS
                     </Heading>
@@ -54,7 +65,7 @@ const MySkills = () => {
                         and performant web APIs, and I am up-to-date on the latest Back-End development
                         technologies and techniques.
                     </ParaText>
-                </div>
+                </motion.div>
             </FlexContainer>
 
         </PaddingContainer>
