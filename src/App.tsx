@@ -1,11 +1,16 @@
 import React from 'react';
-import {Container, MainBody} from "./styles/Global.styled";
+import {Container, FadeImage, MainBody} from "./styles/Global.styled";
 import {ThemeProvider} from "styled-components";
 import {Theme} from './utils/Theme'
 import Showcase from "./components/Showcase";
 import MySkills from "./components/MySkills";
 import MyProjects from "./components/MyProjects";
 import Navbar from "./components/Navbar";
+
+import TopFadeImage from './assets/top.png';
+import BottomFadeImage from './assets/bottom.png';
+import LeftFadeImage from './assets/left.png';
+import RightFadeImage from './assets/right.png';
 
 function App() {
     return (
@@ -17,6 +22,9 @@ function App() {
                     <MySkills/>
                     <MyProjects/>
                 </Container>
+
+                <FadeImage src={TopFadeImage} top="0"/>
+                <FadeImage src={LeftFadeImage} top="30vh"/>
             </MainBody>
         </ThemeProvider>
     );

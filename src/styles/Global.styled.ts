@@ -88,7 +88,7 @@ export const Heading = styled(PaddingContainer)<HeadingProps>`
     }
   }};
 
-  @media(max-width: ${({theme}) => theme.breakpoints.mobile}){
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
     font-size: ${({size}) => {
       switch (size) {
         case 'h1' :
@@ -147,5 +147,26 @@ export const Button = styled.a`
   &:hover {
     color: ${({theme}) => theme.colors.primary_light};
     background-color: ${({theme}) => theme.colors.white};
+  }
+`
+
+
+export interface FadeImage {
+    top?: string,
+    bottom?: string,
+    left?: string,
+    right?: string
+}
+
+export const FadeImage = styled.img<FadeImage>`
+  position: absolute;
+  top: ${({top}) => top};
+  right: ${({right}) => right};
+  left: ${({left}) => left};
+  bottom: ${({bottom}) => bottom};
+  z-index: 0;
+
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    display: none;
   }
 `
