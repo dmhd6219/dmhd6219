@@ -159,7 +159,7 @@ export const ProjectDetails: ProjectDetailType[] = [
             "meters are replenished, making this mod both delightful and practical. ",
         stack: ['Java', 'Forge'],
         img: FloppaScreenshot,
-        git : "https://github.com/dmhd6219/FloppaMod.git"
+        git : "https://github.com/dmhd6219/FloppaMod"
     },
 
 

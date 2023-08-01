@@ -22,7 +22,7 @@ const Project: (props: { data: ProjectDetailType }) => JSX.Element = (props) => 
                         {props.data.name}
                     </Heading>
                     {props.data.git &&
-                        <IconContainer color="secondary" size="2rem" href={props.data.git}>
+                        <IconContainer color="secondary" size="2rem" href={props.data.git} target="_blank">
                             <FaGithub/>
                         </IconContainer>
                     }

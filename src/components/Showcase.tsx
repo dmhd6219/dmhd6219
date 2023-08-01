@@ -55,7 +55,7 @@ const Showcase = () => {
                     {/* Icons */}
                     <FlexContainer gap="20px" responsiveFlex={true}>
                         {ContactLinks.map((contactLink: ContactLinkType) =>
-                            <IconContainer color="secondary" size="1.5rem" href={contactLink.href}>
+                            <IconContainer color="secondary" size="1.5rem" href={contactLink.href} target="_blank">
                                 {contactLink.icon}
                             </IconContainer>
                         )}
