@@ -11,6 +11,7 @@ import {motion} from 'framer-motion';
 
 import {FaGithub, FaSquareLastfm, FaTelegram} from "react-icons/fa6";
 import {fadeInLeftVariant} from "../utils/Variants";
+import {ContactLinks, ContactLinkType} from "../utils/Data";
 
 
 const Showcase = () => {
@@ -54,17 +55,11 @@ const Showcase = () => {
 
                     {/* Icons */}
                     <FlexContainer gap="20px" responsiveFlex={true}>
-                        <IconContainer color="secondary" size="1.5rem">
-                            <FaGithub/>
-                        </IconContainer>
-
-                        <IconContainer color="secondary" size="1.5rem">
-                            <FaTelegram/>
-                        </IconContainer>
-
-                        <IconContainer color="secondary" size="1.5rem">
-                            <FaSquareLastfm/>
-                        </IconContainer>
+                        {ContactLinks.map((contactLink: ContactLinkType) =>
+                            <IconContainer color="secondary" size="1.5rem" href={contactLink.href}>
+                                {contactLink.icon}
+                            </IconContainer>
+                        )}
                     </FlexContainer>
 
                 </motion.div>

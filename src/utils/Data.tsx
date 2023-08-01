@@ -8,8 +8,31 @@ import HiroshiScreenshot from '../assets/HiroshiScreenshot.png'
 import BookingBotScreenshot from '../assets/BookingBotScreenshot.png'
 import JoJoScreenshot from '../assets/JoJoScreenshot.png'
 import FloppaScreenshot from '../assets/FloppaScreenshot.jpg'
+import {FaGithub, FaSquareLastfm, FaTelegram} from "react-icons/fa6";
 
 
+export interface ContactLinkType {
+    id : number,
+    icon : JSX.Element,
+    href : string
+}
+export const ContactLinks : ContactLinkType[] = [
+    {
+        id : 0,
+        icon : <FaGithub/>,
+        href : 'https://github.com/dmhd6219'
+    },
+    {
+        id : 1,
+        icon : <FaTelegram/>,
+        href : 'https://t.me/slavasvyatkin'
+    },
+    {
+        id : 2,
+        icon : <FaSquareLastfm/>,
+        href : 'https://www.last.fm/user/dmhd'
+    }
+]
 export interface SkillType {
     id: number,
     tech: string,

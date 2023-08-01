@@ -121,6 +121,7 @@ interface IconContainerProps {
 export const IconContainer = styled.a<IconContainerProps>`
   font-size: ${({size}) => size};
   cursor: pointer;
+  z-index: 1;
   color: ${({color, theme}) => {
     switch (color) {
       case 'white' :
