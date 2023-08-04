@@ -46,7 +46,7 @@ const Project: (props: { data: ProjectDetailType }) => JSX.Element = (props) => 
                 whileInView="visible"
             >
                 <ProjectImageContainer justify={props.data.id % 2 !== 0 ? 'flex-start' : 'flex-end'}>
-                    <ProjectImage src={props.data.img} alt={props.data.name} loading="lazy"/>
+                    <ProjectImage src={props.data.img} alt={props.data.alt} loading="lazy"/>
                 </ProjectImageContainer>
             </motion.div>
 

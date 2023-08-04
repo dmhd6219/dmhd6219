@@ -8,7 +8,10 @@ import HiroshiScreenshot from '../assets/HiroshiScreenshot.png'
 import BookingBotScreenshot from '../assets/BookingBotScreenshot.png'
 import JoJoScreenshot from '../assets/JoJoScreenshot.png'
 import FloppaScreenshot from '../assets/FloppaScreenshot.jpg'
+import SdamgiaScreenshot from '../assets/SdamgiaScreenshot.png'
+
 import {FaGithub, FaSquareLastfm, FaTelegram} from "react-icons/fa6";
+import {LinkInName} from "../styles/MyProjects.styled";
 
 
 export interface ContactLinkType {
@@ -69,7 +72,8 @@ export const Skills: SkillType[] = [
 
 export interface ProjectDetailType {
     id: number,
-    name: string,
+    name: string | JSX.Element,
+    alt : string,
     desc: string,
     stack: string[],
     img: string,
@@ -80,6 +84,7 @@ export const ProjectDetails: ProjectDetailType[] = [
     {
         id: 0,
         name: "Spotify Statistics",
+        alt : "Spotify Statistics",
         desc: "Discover the awe-inspiring app built on Flask, designed to showcase mesmerizing statistics from users' " +
             "Spotify accounts. Born out of creativity and passion, this remarkable project enables users to share their " +
             "Spotify profiles in a beautiful, engaging manner. With a user-friendly interface and seamless " +
@@ -94,6 +99,7 @@ export const ProjectDetails: ProjectDetailType[] = [
     {
         id: 1,
         name: "Social Network",
+        alt: "Social Network",
         desc: "The cutting-edge social network built on Flask is an project developed for Yandex Lyceum. " +
             "Combining innovative features and user-friendly interface, it has redefined social interaction. " +
             "Powered by Flask, this platform ensures seamless performance and scalability. " +
@@ -109,6 +115,7 @@ export const ProjectDetails: ProjectDetailType[] = [
     {
         id: 2,
         name: "Hiroshi Matsumoto's website remake",
+        alt: "Hiroshi Matsumoto's website remake",
         desc: "Prepare to be amazed by this extraordinary app, combining Svelte + DaisyUI on the frontend and FastAPI " +
             "on the backend. Inspired by the brilliance of Hiroshi Matsumoto's website, this remake takes user " +
             "experience to the next level. With Svelte's dynamic and responsive features along with DaisyUI's sleek " +
@@ -123,6 +130,7 @@ export const ProjectDetails: ProjectDetailType[] = [
     {
         id: 3,
         name: "Telegram Bot for booking rooms",
+        alt: "Telegram Bot for booking rooms",
         desc: "Unleash the power of React with this astounding Telegram web app, revolutionizing the way university " +
             "students book rooms. Seamlessly blending cutting-edge technology and user-friendly design, " +
             "it's truly amazing! This app provides a streamlined and efficient platform for reserving university spaces," +
@@ -137,6 +145,7 @@ export const ProjectDetails: ProjectDetailType[] = [
     {
         id: 4,
         name: "JoJo Organizer",
+        alt : "JoJo Organizer",
         desc: "Step into the extraordinary world of PyQt5 with this quirky desktop alarm app that defies convention " +
             "and surprises users with its peculiar charm. Prepare to be amused as the window playfully shakes, " +
             "making it impossible to close conventionally. With an unexpected touch of humor, an Obama prism " +
@@ -152,6 +161,7 @@ export const ProjectDetails: ProjectDetailType[] = [
     {
         id: 5,
         name: "Floppa Mod",
+        alt: "Floppa Mod",
         desc: "Embark on an amazing Minecraft adventure with the Forge-built mod introducing the enchanting world of " +
             "the Big Russian Cat - Floppa! This delightful addition brings a whole new level of charm to the game as" +
             " players encounter the lovable feline companion. But the wonders don't end there! The mod also introduces " +
@@ -160,6 +170,21 @@ export const ProjectDetails: ProjectDetailType[] = [
         stack: ['Java', 'Forge'],
         img: FloppaScreenshot,
         git : "https://github.com/dmhd6219/FloppaMod"
+    },
+
+    {
+        id: 6,
+        name: <span>Parser for <LinkInName href="https://sdamgia.ru/" target="_blank">sdamgia.ru</LinkInName></span>,
+        alt : "Parser for sdamgia.ru",
+        desc: "Enter the realm of Python with this amazing app designed to alleviate the stress of students facing " +
+            "unwanted tests. Leveraging its prowess in parsing answers from sdamgia.ru, the app empowers students " +
+            "with a valuable resource to tackle challenging exams in subjects they wish to avoid. With a user-friendly " +
+            "CLI interface, it offers a seamless experience, providing accurate answers swiftly. This powerful tool is " +
+            "a game-changer for students navigating through overwhelming academic demands, allowing them to focus on " +
+            "subjects that truly matter. ",
+        stack: ['Python', 'requests', 'bs4'],
+        img: SdamgiaScreenshot,
+        git : "https://github.com/dmhd6219/sdamgia-solver"
     },
 
 
