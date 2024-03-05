@@ -28,7 +28,7 @@ export const ContactLinks : ContactLinkType[] = [
     {
         id : 1,
         icon : <FaTelegram/>,
-        href : 'https://t.me/slavasvyatkin'
+        href : 'https://t.me/dmhd6219'
     },
     {
         id : 2,
