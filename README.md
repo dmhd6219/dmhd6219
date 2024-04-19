@@ -1,39 +1,76 @@
-<h1 align="center">Hi there, I'm <a href="https://dmhd6219.netlify.app/" target="_blank">Svyatoslav</a> 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Innopolis+University+BS22++student" alt="Typing SVG" /></a>
-</h3>
-<p align="center">Graduated from Yandex.Lyceum, entering the top graduates</p>
+# Hello there👋
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-<div align="center">
-	Languages :
-<table>
-	<tbody>
-		<tr>
-			<td align="center">C</td>
-			<td><a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a></td>
-		</tr>
-        <tr>
-			<td align="center">C++</td>
-			<td><a href="https://cplusplus.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="c++" width="40" height="40"/> </a></td>
-		</tr>
-		<tr>
-			<td align="center">Java</td>
-			<td><a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a></td>
-		</tr>
-		<tr>
-			<td align="center">Python</td>
-			<td><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a></td>
-		</tr>
-        <tr>
-			<td align="center">Javascript</td>
-			<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a></td>
-		</tr>
-        <tr>
-			<td align="center">Typescript</td>
-			<td><a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a></td>
-		</tr>
-	</tbody>
-</table>
 
-</div>
+class FullstackDeveloper:
+
+    def __init__(self):
+        self.name = "Sviatoslav Sviatkin"
+        self.city = "Innopolis"
+        self.website = "https://dmhd6219.site/"
+
+        self.role = "Fullstack Developer"
+
+        self.spoken_languages = [
+            {
+                "language": "Russian",
+                "level": "Native",
+            },
+            {
+                "language": "English",
+                "level": "Fluent",
+            }
+        ]
+
+        self.stack = {
+            "frontend": ["React", "Next.js", "Svelte", "SvelteKit", "TailwindCSS", "Framer-Motion", "Styled-Components",
+                         "ESLint", "Prettier", "Husky", "Jest", "Vite",
+                         "HTML", "CSS", "Javascript", "Typescript"],
+
+            "backend": ["FastAPI", "Flask", "SQLite", "PostgreSQL", "MongoDB", "SQLAlchemy", "Alembic", "pylint",
+                        "pytest", "poetry", "python"],
+
+            "misc": ["Docker", "Git", "PyQt5", "PyGame", "BS4", "Selenuim", "Forge", "LaTeX"]
+        }
+
+    def say_hi(self):
+        print(f"Hello! My name is {self.name} and I am a {self.role}. Currently I live in {self.city}. "
+              f"You can see my projects here or on {self.website}.")
+
+
+me = FullstackDeveloper()
+me.say_hi()
+
+```
+
+## 📝 Links
+* Personal website: https://dmhd6219.site/
+* Telegram: https://t.me/dmhd6219
+* Last.FM; https://last.fm/dmhd
+
+## 🔧 Technologies & Tools
+
+### Languages:
+![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Frameworks:
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00)
+![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![](https://img.shields.io/badge/FastAPI-000000?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Tools:
+![](https://img.shields.io/badge/docker-369cee?style=for-the-badge&logo=docker&logoColor=white)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+![](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
+![](https://img.shields.io/badge/pylint-000?style=for-the-badge&logo=pylint&logoColor=white)
+![](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
+![](https://img.shields.io/badge/LaTeX-1f425f?style=for-the-badge&logo=latex)
