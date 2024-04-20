@@ -48,7 +48,7 @@ me.say_hi()
 ## 📝 Links
 * Personal website: https://dmhd6219.site/
 * Telegram: https://t.me/dmhd6219
-* Last.FM; https://last.fm/dmhd
+* Last.FM; https://last.fm/user/dmhd
 
 ## 🔧 Technologies & Tools
 
