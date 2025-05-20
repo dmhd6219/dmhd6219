@@ -10,6 +10,7 @@ interface InfoBlockProps {
 }
 
 const InfoBlock = ({ title, entries }: InfoBlockProps) => {
+    // TODO: сделать, чтобы можно было выбрать, с какой стороны будет выпадать анимация
     return (
         <section className="pt-16 px-4 md:px-0">
             <motion.div

@@ -6,7 +6,7 @@ import { Projects } from '@/components/Projects.tsx';
 import { Hackathons } from '@/components/Hackathons.tsx';
 import { experiences } from '@/lib/config/expirience';
 import { InfoBlock } from '@/components/page/components/InfoBlock';
-import { education } from '@/lib/config/education';
+import { additionalEducation, education } from '@/lib/config/education';
 
 const Layout = () => {
     return (
@@ -17,6 +17,10 @@ const Layout = () => {
                 <About />
                 <InfoBlock title="Коммерческий опыт" entries={experiences} />
                 <InfoBlock title="Образование" entries={education} />
+                <InfoBlock
+                    title="Дополнительное образование"
+                    entries={additionalEducation}
+                />
                 <Hackathons />
                 <Projects />
             </div>

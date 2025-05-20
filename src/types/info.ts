@@ -1,6 +1,6 @@
 export interface InfoBlockEntry {
     title: string;
-    subtitle: string;
+    subtitle?: string;
     titleLink?: string;
     image?: string;
 
