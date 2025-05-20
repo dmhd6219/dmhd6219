@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card.tsx';
 import { FileCodeIcon } from 'lucide-react';
-import { techStack } from '@/lib/config';
+import { techStack } from '@/lib/config/me.tsx';
 import { Badge } from '@/components/ui/badge';
 import { getRandomColor } from './lib/utils';
 

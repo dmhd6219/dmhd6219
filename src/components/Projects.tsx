@@ -44,7 +44,7 @@ const projects: Project[] = [
 
 export const Projects = () => {
     return (
-        <section className="py-16">
+        <section className="pt-16 px-4 md:px-0">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

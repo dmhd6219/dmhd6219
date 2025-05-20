@@ -1,9 +1,9 @@
 import * as React from 'react';
-import MailIcon from '@/components/ui/icon/mail';
-import TelegramIcon from '@/components/ui/icon/telegram';
-import GithubIcon from '@/components/ui/icon/github';
-import LastFmIcon from '@/components/ui/icon/lastfm';
-import CoffeeIcon from '@/components/ui/icon/coffee';
+import MailIcon from '@/components/ui/icon/mail.tsx';
+import TelegramIcon from '@/components/ui/icon/telegram.tsx';
+import GithubIcon from '@/components/ui/icon/github.tsx';
+import LastFmIcon from '@/components/ui/icon/lastfm.tsx';
+import CoffeeIcon from '@/components/ui/icon/coffee.tsx';
 
 export const techStack = [
     'React',

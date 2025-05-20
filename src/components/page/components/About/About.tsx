@@ -3,32 +3,45 @@ import { Stars } from './components/Stars';
 import { Available } from './components/Available';
 import { Location } from './components/Location';
 import { Stack } from './components/Stack';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <section>
-            <h1 className="text-4xl font-bold mb-4">Немного про меня</h1>
-            <div className="w-full flex gap-x-4 items-stretch">
+        <section className="px-4 md:px-0">
+            <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-3xl md:text-4xl font-bold mb-4"
+            >
+                Немного про меня
+            </motion.h1>
+            <div className="w-full flex flex-col md:flex-row gap-y-4 md:gap-x-4 items-stretch">
                 {/*Левый блок*/}
-                <div className="w-1/2 flex flex-col gap-y-4">
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="w-full md:w-1/2 flex flex-col gap-y-4"
+                >
                     <Contacts />
-
                     <Stars />
-                </div>
+                </motion.div>
 
                 {/*Правый блок*/}
-                <div className="w-1/2 flex flex-col gap-y-4">
-                    <div className="flex gap-x-4">
-                        {/*Доступен*/}
+                <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className="w-full md:w-1/2 flex flex-col gap-y-4"
+                >
+                    <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4 w-full">
                         <Available />
-
-                        {/*Локация*/}
                         <Location />
                     </div>
-
                     {/*Стек*/}
                     <Stack />
-                </div>
+                </motion.div>
             </div>
         </section>
     );

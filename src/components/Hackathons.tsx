@@ -1,31 +1,26 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
-interface EducationItem {
-    institution: string;
-    degree: string;
-    period: string;
+interface HackathonItem {
+    name: string;
+    date: string;
+    status: string;
     description: string;
+    link: string;
 }
 
-const education: EducationItem[] = [
+const hackathons: HackathonItem[] = [
     {
-        institution: 'Московский Технический Университет',
-        degree: 'Магистр компьютерных наук',
-        period: '2018 - 2020',
+        name: 'Technoed Хакатон от Сбера',
+        status: 'Победитель',
+        date: '2024',
         description:
-            "Специализация в области искусственного интеллекта и машинного обучения. Дипломная работа: 'Применение нейронных сетей в обработке естественного языка'",
-    },
-    {
-        institution: 'Санкт-Петербургский Государственный Университет',
-        degree: 'Бакалавр информационных технологий',
-        period: '2014 - 2018',
-        description:
-            'Основное направление: разработка программного обеспечения. Участие в научных конференциях и хакатонах',
+            'Создали LMS с ИИ на основе Telegram Mini Apps для IT Академии.',
+        link: 'https://developers.sber.ru/kak-v-sbere/events/hackathon_october',
     },
 ];
 
-export const Education = () => {
+export const Hackathons = () => {
     return (
         <section className="pt-16 px-4 md:px-0">
             <motion.div
@@ -34,14 +29,14 @@ export const Education = () => {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-2 mb-8"
             >
-                <h2 className="text-3xl font-bold">Образование</h2>
+                <h2 className="text-3xl font-bold">Хакатоны</h2>
             </motion.div>
 
             <div className="space-y-8">
-                {education.map((edu, index) => (
+                {hackathons.map((edu, index) => (
                     <motion.div
                         key={index}
-                        initial={{ opacity: 0, x: 20 }}
+                        initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
@@ -50,14 +45,14 @@ export const Education = () => {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h3 className="text-xl font-semibold">
-                                            {edu.degree}
+                                            {edu.name}
                                         </h3>
                                         <p className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-pink-600 font-medium">
-                                            {edu.institution}
+                                            {edu.status}
                                         </p>
                                     </div>
                                     <span className="text-muted-foreground">
-                                        {edu.period}
+                                        {edu.date}
                                     </span>
                                 </div>
                             </CardHeader>

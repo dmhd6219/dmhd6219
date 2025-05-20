@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card.tsx';
 import { ExternalLinkIcon, Star } from 'lucide-react';
 import { useStarsCount } from './hooks/useStarsCount.ts';
 import { Skeleton } from '@/components/ui/skeleton.tsx';
-import { githubRepo } from '@/lib/config.tsx';
+import { githubRepo } from '@/lib/config/me.tsx';
 
 const Stars = () => {
     const { stars, isLoading } = useStarsCount();

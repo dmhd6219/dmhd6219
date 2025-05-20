@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card.tsx';
-import { links } from '@/lib/config';
+import { links } from '@/lib/config/me.tsx';
 import { LinkIcon } from 'lucide-react';
 
 const Contacts = () => {

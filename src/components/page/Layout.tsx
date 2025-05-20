@@ -5,6 +5,7 @@ import { Me } from './components/Me';
 import { Experience } from '@/components/Experience.tsx';
 import { Education } from '@/components/Education.tsx';
 import { Projects } from '@/components/Projects.tsx';
+import { Hackathons } from '@/components/Hackathons.tsx';
 
 const Layout = () => {
     return (
@@ -15,6 +16,7 @@ const Layout = () => {
                 <About />
                 <Experience />
                 <Education />
+                <Hackathons />
                 <Projects />
             </div>
             <Footer />

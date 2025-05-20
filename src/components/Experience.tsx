@@ -1,43 +1,12 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-
-interface ExperienceItem {
-    company: string;
-    position: string;
-    period: string;
-    description: string[];
-    technologies: string[];
-}
-
-const experiences: ExperienceItem[] = [
-    {
-        company: 'Tech Solutions Inc.',
-        position: 'Senior Frontend Developer',
-        period: '2022 - Настоящее время',
-        description: [
-            'Разработка и поддержка высоконагруженных веб-приложений',
-            'Оптимизация производительности и улучшение UX',
-            'Менторство младших разработчиков',
-        ],
-        technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL'],
-    },
-    {
-        company: 'Digital Innovations',
-        position: 'Frontend Developer',
-        period: '2020 - 2022',
-        description: [
-            'Разработка пользовательских интерфейсов',
-            'Интеграция с REST API',
-            'Участие в code review',
-        ],
-        technologies: ['Vue.js', 'JavaScript', 'SCSS', 'Webpack'],
-    },
-];
+import { experiences } from '@/lib/config/expirience';
+import { cn } from '@/lib/utils.ts';
 
 export const Experience = () => {
     return (
-        <section className="py-16">
+        <section className="pt-16 px-4 md:px-0">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -58,25 +27,49 @@ export const Experience = () => {
                         <Card>
                             <CardHeader>
                                 <div className="flex justify-between items-start">
-                                    <div>
-                                        <h3 className="text-xl font-semibold">
-                                            {exp.position}
-                                        </h3>
-                                        <p className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-pink-600 font-medium">
-                                            {exp.company}
-                                        </p>
+                                    <div className="flex items-center gap-x-4">
+                                        {exp.image && (
+                                            <img
+                                                src={exp.image}
+                                                alt={exp.company}
+                                                className="w-16 h-16"
+                                            />
+                                        )}
+                                        <div>
+                                            <h3
+                                                className={cn(
+                                                    'text-xl font-semibold',
+                                                    exp.link && 'underline',
+                                                )}
+                                            >
+                                                <a
+                                                    href={exp.link}
+                                                    target="_blank"
+                                                >
+                                                    {exp.company}
+                                                </a>
+                                            </h3>
+                                            <p className="font-medium text-zinc-300">
+                                                {exp.position}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <span className="text-muted-foreground">
+                                    <span className="text-muted-foreground text-right">
                                         {exp.period}
                                     </span>
                                 </div>
                             </CardHeader>
                             <CardContent>
-                                <ul className="list-disc list-inside mb-4 space-y-2 text-muted-foreground">
-                                    {exp.description.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))}
-                                </ul>
+                                <div>
+                                    <div className="pb-2 text-muted-foreground">
+                                        {exp.description}
+                                    </div>
+                                    <ul className="list-disc list-inside mb-4 space-y-2 text-muted-foreground">
+                                        {exp.bullets?.map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
 
                                 <div className="flex flex-wrap gap-2">
                                     {exp.technologies.map((tech, i) => (

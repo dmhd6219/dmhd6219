@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card.tsx';
 
 const Available = () => {
     return (
-        <Card className="w-1/2 rounded-md">
+        <Card className="w-full md:w-1/2 rounded-md">
             <CardContent className="text-muted-foreground h-full flex flex-col gap-y-2 justify-center items-center">
                 <div className="flex justify-center">
                     <span className="relative flex h-4 w-4">
