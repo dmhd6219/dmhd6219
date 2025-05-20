@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+:root {
+    --innopolis-color: #40ba21;
+    --yandex-color: #ffcc00;
+}
+
 @theme {
     --color-background: var(--color-white);
     --color-foreground: var(--color-slate-900);
@@ -21,6 +26,9 @@
     --color-border: var(--color-slate-200);
     --color-input: var(--color-slate-200);
     --color-ring: var(--color-slate-400);
+
+    --color-innopolis: var(--innopolis-color);
+    --color-yandex: var(--yandex-color);
 
     --radius: 0.5rem;
     --radius-lg: var(--radius);
