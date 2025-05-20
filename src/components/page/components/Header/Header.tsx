@@ -14,7 +14,7 @@ const Header = () => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    href="/"
+                    href="#home"
                     className="font-bold text-xl md:text-2xl"
                 >
                     {me.default}

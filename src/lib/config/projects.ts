@@ -80,7 +80,6 @@ export const projects: ProjectType[] = [
             'Python',
             'FastAPI',
         ],
-        link: 'https://dmhd6219-yabloko.netlify.app/',
         github: 'https://github.com/dmhd6219/apple-website',
     },
     {

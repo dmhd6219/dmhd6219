@@ -57,7 +57,7 @@ const Project = ({ project, index }: ProjectProps) => {
                         )}
                         {project.link && (
                             <a
-                                href={project.github}
+                                href={project.link}
                                 target="_blank"
                                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                             >
