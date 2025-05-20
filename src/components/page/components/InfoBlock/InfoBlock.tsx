@@ -10,7 +10,6 @@ interface InfoBlockProps {
 }
 
 const InfoBlock = ({ title, entries }: InfoBlockProps) => {
-    // TODO: сделать, чтобы можно было выбрать, с какой стороны будет выпадать анимация
     return (
         <section className="pt-16 px-4 md:px-0">
             <motion.div
@@ -26,7 +25,7 @@ const InfoBlock = ({ title, entries }: InfoBlockProps) => {
                 {entries.map((entry, index) => (
                     <motion.div
                         key={index}
-                        initial={{ opacity: 0, x: -20 }}
+                        initial={{ opacity: 0, x: index % 2 == 0 ? 20 : -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
