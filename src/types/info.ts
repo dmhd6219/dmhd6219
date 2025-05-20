@@ -15,6 +15,6 @@ export interface ProjectType {
     description: string;
     image: string;
     technologies: string[];
-    link: string;
+    link?: string;
     github?: string;
 }

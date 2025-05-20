@@ -17,7 +17,7 @@ const Project = ({ project, index }: ProjectProps) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
         >
-            <Card className="overflow-hidden h-full flex flex-col">
+            <Card className="overflow-hidden h-full flex flex-col pt-0">
                 <img
                     src={project.image}
                     alt={project.title}
@@ -55,14 +55,16 @@ const Project = ({ project, index }: ProjectProps) => {
                                 <span>GitHub</span>
                             </a>
                         )}
-                        <a
-                            href={project.github}
-                            target="_blank"
-                            className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                        >
-                            <ExternalLink className="w-5 h-5" />
-                            <span>Демо</span>
-                        </a>
+                        {project.link && (
+                            <a
+                                href={project.github}
+                                target="_blank"
+                                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                            >
+                                <ExternalLink className="w-5 h-5" />
+                                <span>Демо</span>
+                            </a>
+                        )}
                     </div>
                 </CardContent>
             </Card>
