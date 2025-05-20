@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card.tsx';
 import { ExternalLinkIcon, Star } from 'lucide-react';
-import { useStarsCount } from '@/components/page/Layout/components/About/components/Stars/hooks/useStarsCount.ts';
+import { useStarsCount } from './hooks/useStarsCount.ts';
 import { Skeleton } from '@/components/ui/skeleton.tsx';
 import { githubRepo } from '@/lib/config.tsx';
 

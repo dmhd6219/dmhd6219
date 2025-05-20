@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { githubRepo } from '@/lib/config.tsx';
+import { githubRepo } from '@/lib/config';
 
 export function useStarsCount() {
     const [stars, setStars] = useState(0);

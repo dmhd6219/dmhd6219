@@ -1,7 +1,7 @@
-import { Header } from '@/components/page/Header';
-import { Footer } from '@/components/page/Footer';
-import { About } from '@/components/page/Layout/components/About';
-import { Me } from '@/components/page/Layout/components/Me';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { About } from './components/About';
+import { Me } from './components/Me';
 
 const Layout = () => {
     return (

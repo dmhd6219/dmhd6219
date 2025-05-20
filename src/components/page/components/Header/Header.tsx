@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header>
             <div className="py-4 flex justify-between items-center">
-                <a href="/" className="font-bold text-2xl">
+                <a href="/public" className="font-bold text-2xl">
                     {me.default}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-pink-600">
                         {me.colored}
