@@ -7,11 +7,12 @@ import type { InfoBlockEntry } from '@/types/info.ts';
 interface InfoBlockProps {
     title: string;
     entries: InfoBlockEntry[];
+    id: string;
 }
 
-const InfoBlock = ({ title, entries }: InfoBlockProps) => {
+const InfoBlock = ({ title, entries, id }: InfoBlockProps) => {
     return (
-        <section className="pt-16 px-4 md:px-0">
+        <section className="pt-16 px-4 md:px-0" id={id}>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

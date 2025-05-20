@@ -4,7 +4,7 @@ import { projects } from '@/lib/config/projects';
 
 const Projects = () => {
     return (
-        <section className="pt-16 px-4 md:px-0">
+        <section className="pt-16 px-4 md:px-0" id="projects">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

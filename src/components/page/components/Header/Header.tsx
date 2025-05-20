@@ -28,7 +28,6 @@ const Header = () => {
                     </motion.span>
                 </motion.a>
 
-                {/* Мобильное меню */}
                 <button
                     className="md:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -36,7 +35,6 @@ const Header = () => {
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
 
-                {/* Десктопное меню */}
                 <motion.nav
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -49,21 +47,42 @@ const Header = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <a href="#home">Home</a>
+                            <a href="#home">Привет!</a>
                         </motion.li>
                         <motion.li
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.3 }}
                         >
-                            <a href="#about">About</a>
+                            <a href="#about">Про меня</a>
                         </motion.li>
                         <motion.li
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
-                            <a href="#projects">Projects</a>
+                            <a href="#experience">Опыт</a>
+                        </motion.li>
+                        <motion.li
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.5 }}
+                        >
+                            <a href="#education">Образование</a>
+                        </motion.li>
+                        <motion.li
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.5 }}
+                        >
+                            <a href="#additional-education">Доп. Образование</a>
+                        </motion.li>
+                        <motion.li
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                        >
+                            <a href="#projects">Проекты</a>
                         </motion.li>
                     </ul>
                 </motion.nav>
@@ -87,7 +106,7 @@ const Header = () => {
                                         href="#home"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        Home
+                                        Привет!
                                     </a>
                                 </motion.li>
                                 <motion.li
@@ -99,7 +118,7 @@ const Header = () => {
                                         href="#about"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        About
+                                        Про меня
                                     </a>
                                 </motion.li>
                                 <motion.li
@@ -108,10 +127,46 @@ const Header = () => {
                                     transition={{ duration: 0.3, delay: 0.2 }}
                                 >
                                     <a
+                                        href="#experience"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        Опыт
+                                    </a>
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.3, delay: 0.3 }}
+                                >
+                                    <a
+                                        href="#education"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        Образование
+                                    </a>
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.3, delay: 0.3 }}
+                                >
+                                    <a
+                                        href="#additional-education"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        Доп. Образование
+                                    </a>
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.3, delay: 0.4 }}
+                                >
+                                    <a
                                         href="#projects"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        Projects
+                                        Проекты
                                     </a>
                                 </motion.li>
                             </ul>

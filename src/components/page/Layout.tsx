@@ -15,13 +15,26 @@ const Layout = () => {
             <div className="flex-1">
                 <Me />
                 <About />
-                <InfoBlock title="Коммерческий опыт" entries={experiences} />
-                <InfoBlock title="Образование" entries={education} />
+                <InfoBlock
+                    title="Коммерческий опыт"
+                    entries={experiences}
+                    id="experience"
+                />
+                <InfoBlock
+                    title="Образование"
+                    entries={education}
+                    id="education"
+                />
                 <InfoBlock
                     title="Дополнительное образование"
                     entries={additionalEducation}
+                    id="additional-education"
                 />
-                <InfoBlock title="Хакатоны" entries={hackathons} />
+                <InfoBlock
+                    title="Хакатоны"
+                    entries={hackathons}
+                    id="hackathons"
+                />
                 <Projects />
             </div>
             <Footer />
