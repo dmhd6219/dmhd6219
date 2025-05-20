@@ -1,6 +1,6 @@
 const Me = () => {
     return (
-        <div
+        <section
             className="mt-32 mb-16 mx-auto max-w-screen-lg text-center font-bold text-4xl md:text-5xl lg:text-6xl"
             id="home"
         >
@@ -30,7 +30,7 @@ const Me = () => {
                 {/*    компания-нейм*/}
                 {/*</a>*/}.
             </span>
-        </div>
+        </section>
     );
 };
 
