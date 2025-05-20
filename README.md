@@ -1,54 +1,81 @@
-# React + TypeScript + Vite
+# Hello there👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```python
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+class FullstackDeveloper:
 
-## Expanding the ESLint configuration
+    def __init__(self):
+        self.name = "Sviatoslav Sviatkin"
+        self.city = "Innopolis"
+        self.website = "https://dmhd6219.site/"
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+        self.role = "Fullstack Developer"
 
-```js
-export default tseslint.config({
-    extends: [
-        // Remove ...tseslint.configs.recommended and replace with this
-        ...tseslint.configs.recommendedTypeChecked,
-        // Alternatively, use this for stricter rules
-        ...tseslint.configs.strictTypeChecked,
-        // Optionally, add this for stylistic rules
-        ...tseslint.configs.stylisticTypeChecked,
-    ],
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ['./tsconfig.node.json', './tsconfig.app.json'],
-            tsconfigRootDir: import.meta.dirname,
-        },
-    },
-});
+        self.spoken_languages = [
+            {
+                "language": "Russian",
+                "level": "Native",
+            },
+            {
+                "language": "English",
+                "level": "Fluent",
+            }
+        ]
+
+        self.stack = {
+            "frontend": ["React", "Next.js", "Svelte", "SvelteKit", "TailwindCSS", "Framer-Motion", "Styled-Components",
+                         "ESLint", "Prettier", "Husky", "Jest", "Vite",
+                         "HTML", "CSS", "Javascript", "Typescript"],
+
+            "backend": ["FastAPI", "Flask", "SQLite", "PostgreSQL", "MongoDB", "SQLAlchemy", "Alembic", "pylint",
+                        "pytest", "poetry", "python"],
+
+            "misc": ["Docker", "Git", "PyQt5", "PyGame", "BS4", "Selenuim", "Forge", "LaTeX"]
+        }
+
+    def say_hi(self):
+        print(f"Hello! My name is {self.name} and I am a {self.role}. Currently I live in {self.city}. "
+              f"You can see my projects here or on {self.website}.")
+
+
+me = FullstackDeveloper()
+me.say_hi()
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📝 Links
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+- Personal website: https://dmhd6219.site/
+- Telegram: https://t.me/dmhd6219
+- Last.FM; https://last.fm/user/dmhd
 
-export default tseslint.config({
-    plugins: {
-        // Add the react-x and react-dom plugins
-        'react-x': reactX,
-        'react-dom': reactDom,
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended typescript rules
-        ...reactX.configs['recommended-typescript'].rules,
-        ...reactDom.configs.recommended.rules,
-    },
-});
-```
+## 🔧 Technologies & Tools
+
+### Languages:
+
+![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Frameworks:
+
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00)
+![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![](https://img.shields.io/badge/FastAPI-000000?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Tools:
+
+![](https://img.shields.io/badge/docker-369cee?style=for-the-badge&logo=docker&logoColor=white)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+![](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
+![](https://img.shields.io/badge/pylint-000?style=for-the-badge&logo=pylint&logoColor=white)
+![](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
+![](https://img.shields.io/badge/LaTeX-1f425f?style=for-the-badge&logo=latex)
