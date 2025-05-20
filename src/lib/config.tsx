@@ -1,3 +1,10 @@
+import * as React from 'react';
+import MailIcon from '@/components/ui/icon/mail';
+import TelegramIcon from '@/components/ui/icon/telegram';
+import GithubIcon from '@/components/ui/icon/github';
+import LastFmIcon from '@/components/ui/icon/lastfm';
+import CoffeeIcon from '@/components/ui/icon/coffee';
+
 export const techStack = [
     'React',
     'Next.js',
@@ -10,15 +17,24 @@ export const techStack = [
     'TailwindCSS',
     'Styled-Components',
     'Framer-Motion',
+    'GSAP',
+    'Three.js',
     'shadcn-ui',
     'Ant-Design',
+    'Material UI',
     'ESLint',
     'Prettier',
     'husky',
     'lint-staged',
     'Redux',
+    'Zustand',
+    'MobX',
     'RTK Query',
     'Tanstack Query',
+    'jest',
+    'vitest',
+    'playwright',
+    'storybook',
     'Python',
     'FastApi',
     'Flask',
@@ -38,7 +54,7 @@ export const techStack = [
 
 export const githubRepo = {
     author: 'dmhd6219',
-    repo: 'portfolio-website',
+    repo: 'dmhd6219',
 };
 
 export const city = {
@@ -59,15 +75,33 @@ export const me: Nickname = {
 interface Link {
     href: string;
     title: string;
+    icon?: React.ReactNode;
 }
 
-export const navLinks: Link[] = [
+export const links: Link[] = [
     {
-        href: '#about',
-        title: 'Про меня',
+        href: 'mailto:svyatoslavsvyatkin@yandex.ru',
+        title: 'Почта',
+        icon: <MailIcon color="muted-foreground" />,
     },
     {
-        href: '#projects',
-        title: 'Проекты',
+        href: 'https://t.me/dmhd6219',
+        title: 'Telegram',
+        icon: <TelegramIcon color="muted-foreground" />,
+    },
+    {
+        href: 'https://github.com/dmhd6219',
+        title: 'GitHub',
+        icon: <GithubIcon color="muted-foreground" />,
+    },
+    {
+        href: 'https://last.fm/user/dmhd',
+        title: 'LastFm',
+        icon: <LastFmIcon color="muted-foreground" />,
+    },
+    {
+        href: 'https://pay.cloudtips.ru/p/02da9349',
+        title: 'Buy me a coffee',
+        icon: <CoffeeIcon color="muted-foreground" />,
     },
 ];
