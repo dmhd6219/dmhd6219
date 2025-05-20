@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader } from '@/components/ui/card.tsx';
+import { Badge } from '@/components/ui/badge.tsx';
 
 interface Project {
     title: string;
@@ -42,7 +42,7 @@ const projects: Project[] = [
     },
 ];
 
-export const Projects = () => {
+const Projects = () => {
     return (
         <section className="pt-16 px-4 md:px-0">
             <motion.div
@@ -121,3 +121,5 @@ export const Projects = () => {
         </section>
     );
 };
+
+export default Projects;

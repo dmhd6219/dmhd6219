@@ -2,11 +2,11 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { About } from './components/About';
 import { Me } from './components/Me';
-import { Projects } from '@/components/Projects.tsx';
-import { Hackathons } from '@/components/Hackathons.tsx';
-import { experiences } from '@/lib/config/expirience';
+import { Projects } from './components/Projects';
+import { experiences } from '@/lib/config/expirience.ts';
 import { InfoBlock } from '@/components/page/components/InfoBlock';
 import { additionalEducation, education } from '@/lib/config/education';
+import { hackathons } from '@/lib/config/hackathons';
 
 const Layout = () => {
     return (
@@ -21,7 +21,7 @@ const Layout = () => {
                     title="Дополнительное образование"
                     entries={additionalEducation}
                 />
-                <Hackathons />
+                <InfoBlock title="Хакатоны" entries={hackathons} />
                 <Projects />
             </div>
             <Footer />
