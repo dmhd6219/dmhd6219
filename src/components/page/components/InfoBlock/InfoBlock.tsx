@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { experiences } from '@/lib/config/expirience';
+import { Card, CardContent, CardHeader } from '@/components/ui/card.tsx';
 import { cn } from '@/lib/utils.ts';
+import { Badge } from '@/components/ui/badge.tsx';
+import type { InfoBlockEntry } from '@/types/info.ts';
 
-export const Experience = () => {
+interface InfoBlockProps {
+    title: string;
+    entries: InfoBlockEntry[];
+}
+
+const InfoBlock = ({ title, entries }: InfoBlockProps) => {
     return (
         <section className="pt-16 px-4 md:px-0">
             <motion.div
@@ -13,11 +18,11 @@ export const Experience = () => {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-2 mb-8"
             >
-                <h2 className="text-3xl font-bold">Опыт работы</h2>
+                <h2 className="text-3xl font-bold">{title}</h2>
             </motion.div>
 
             <div className="space-y-8">
-                {experiences.map((exp, index) => (
+                {entries.map((entry, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, x: -20 }}
@@ -28,10 +33,10 @@ export const Experience = () => {
                             <CardHeader>
                                 <div className="flex justify-between items-start">
                                     <div className="flex items-center gap-x-4">
-                                        {exp.image && (
+                                        {entry.image && (
                                             <img
-                                                src={exp.image}
-                                                alt={exp.company}
+                                                src={entry.image}
+                                                alt={entry.title}
                                                 className="w-16 h-16"
                                             />
                                         )}
@@ -39,40 +44,41 @@ export const Experience = () => {
                                             <h3
                                                 className={cn(
                                                     'text-xl font-semibold',
-                                                    exp.link && 'underline',
+                                                    entry.titleLink &&
+                                                        'underline',
                                                 )}
                                             >
                                                 <a
-                                                    href={exp.link}
+                                                    href={entry.titleLink}
                                                     target="_blank"
                                                 >
-                                                    {exp.company}
+                                                    {entry.title}
                                                 </a>
                                             </h3>
                                             <p className="font-medium text-zinc-300">
-                                                {exp.position}
+                                                {entry.subtitle}
                                             </p>
                                         </div>
                                     </div>
                                     <span className="text-muted-foreground text-right">
-                                        {exp.period}
+                                        {entry.rightSection}
                                     </span>
                                 </div>
                             </CardHeader>
                             <CardContent>
                                 <div>
                                     <div className="pb-2 text-muted-foreground">
-                                        {exp.description}
+                                        {entry.description}
                                     </div>
                                     <ul className="list-disc list-inside mb-4 space-y-2 text-muted-foreground">
-                                        {exp.bullets?.map((item, i) => (
+                                        {entry.bullets?.map((item, i) => (
                                             <li key={i}>{item}</li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <div className="flex flex-wrap gap-2">
-                                    {exp.technologies.map((tech, i) => (
+                                    {entry.badges?.map((tech, i) => (
                                         <Badge
                                             key={i}
                                             className="bg-secondary hover:bg-secondary/80 text-secondary-foreground"
@@ -89,3 +95,5 @@ export const Experience = () => {
         </section>
     );
 };
+
+export default InfoBlock;

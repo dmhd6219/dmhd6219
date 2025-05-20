@@ -2,10 +2,11 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { About } from './components/About';
 import { Me } from './components/Me';
-import { Experience } from '@/components/Experience.tsx';
-import { Education } from '@/components/Education.tsx';
 import { Projects } from '@/components/Projects.tsx';
 import { Hackathons } from '@/components/Hackathons.tsx';
+import { experiences } from '@/lib/config/expirience';
+import { InfoBlock } from '@/components/page/components/InfoBlock';
+import { education } from '@/lib/config/education';
 
 const Layout = () => {
     return (
@@ -14,8 +15,8 @@ const Layout = () => {
             <div className="flex-1">
                 <Me />
                 <About />
-                <Experience />
-                <Education />
+                <InfoBlock title="Коммерческий опыт" entries={experiences} />
+                <InfoBlock title="Образование" entries={education} />
                 <Hackathons />
                 <Projects />
             </div>
