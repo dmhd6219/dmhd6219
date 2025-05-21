@@ -47,7 +47,7 @@ me.say_hi()
 
 ## 📝 Links
 
-- Personal website: [dmhd6219.pro](https://dmhd6219.pro?utm_source=github_readme)
+- Personal website: [https://dmhd6219.pro/](https://dmhd6219.pro?utm_source=github_readme)
 - Telegram: https://t.me/dmhd6219
 - Last.FM: https://last.fm/user/dmhd
 
