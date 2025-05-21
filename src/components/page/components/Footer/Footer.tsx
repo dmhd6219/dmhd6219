@@ -16,7 +16,7 @@ export default function Footer() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    href="/public"
+                    href="#home"
                     className="text-lg md:text-xl"
                 >
                     {me.default}
