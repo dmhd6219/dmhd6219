@@ -3,6 +3,7 @@ import { Stars } from './components/Stars';
 import { Available } from './components/Available';
 import { Location } from './components/Location';
 import { Stack } from './components/Stack';
+import CV from './components/CV/CV';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -25,7 +26,14 @@ const About = () => {
                     className="w-full md:w-1/2 flex flex-col gap-y-4"
                 >
                     <Contacts />
-                    <Stars />
+                    <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-4 h-full">
+                        <div className="w-full md:w-1/2">
+                            <Stars />
+                        </div>
+                        <div className="w-full md:w-1/2">
+                            <CV />
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/*Правый блок*/}

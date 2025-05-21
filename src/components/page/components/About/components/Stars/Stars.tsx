@@ -26,7 +26,7 @@ const Stars = () => {
                         <ExternalLinkIcon size={20} />
                     </div>
                 </CardHeader>
-                <CardContent className="text-2xl font-bold text-foreground flex flex-col gap-y-1.5">
+                <CardContent className="text-2xl font-bold flex flex-col gap-y-1.5">
                     {isLoading ? <Skeleton className="w-[64px] h-8" /> : stars}
                 </CardContent>
             </Card>
