@@ -3,7 +3,7 @@ import { Stars } from './components/Stars';
 import { Available } from './components/Available';
 import { Location } from './components/Location';
 import { Stack } from './components/Stack';
-import CV from './components/CV/CV';
+import { CV } from './components/CV';
 import { motion } from 'framer-motion';
 
 const About = () => {
