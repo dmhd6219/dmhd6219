@@ -1,10 +1,47 @@
 import { motion } from 'framer-motion';
 import { Project } from './components/Project';
 import { projects } from '@/lib/config/projects';
+import { useEffect, useRef } from 'react';
+import { ym } from 'react-metrika';
+import { COUNTER_NUMBER } from '@/lib/config/ym';
 
 const Projects = () => {
+    const projectsRef = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        ym(COUNTER_NUMBER, 'reachGoal', 'projects_intersected');
+                    }
+                });
+            },
+            {
+                threshold: [0.1],
+                rootMargin: '0px',
+            },
+        );
+
+        const currentRef = projectsRef.current;
+        if (currentRef) {
+            observer.observe(currentRef);
+        }
+
+        return () => {
+            if (currentRef) {
+                observer.unobserve(currentRef);
+            }
+        };
+    }, []);
+
     return (
-        <section className="pt-16 px-4 md:px-0" id="projects">
+        <section
+            ref={projectsRef}
+            className="pt-16 px-4 md:px-0"
+            id="projects"
+            style={{ minHeight: '100vh' }}
+        >
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

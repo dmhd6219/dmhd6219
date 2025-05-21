@@ -10,7 +10,6 @@ class FullstackDeveloper:
     def __init__(self):
         self.name = "Sviatoslav Sviatkin"
         self.city = "Innopolis"
-        self.website = "https://dmhd6219.site/"
 
         self.role = "Fullstack Developer"
 
@@ -21,7 +20,7 @@ class FullstackDeveloper:
             },
             {
                 "language": "English",
-                "level": "Fluent",
+                "level": "C1",
             }
         ]
 
@@ -48,9 +47,9 @@ me.say_hi()
 
 ## 📝 Links
 
-- Personal website: https://dmhd6219.site/
+- Personal website: [dmhd6219.pro](https://dmhd6219.pro?utm_source=github_readme)
 - Telegram: https://t.me/dmhd6219
-- Last.FM; https://last.fm/user/dmhd
+- Last.FM: https://last.fm/user/dmhd
 
 ## 🔧 Technologies & Tools
 
