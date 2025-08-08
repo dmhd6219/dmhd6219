@@ -46,11 +46,15 @@ const Me = () => {
                 >
                     Университете Иннополис
                 </a>{' '}
-                на 4м курсе
-                {/*и работаю Frontend разработчиком в {' '}*/}
-                {/*<a href="https://yandex.ru/" target="_blank" className='text-yandex'>*/}
-                {/*    компания-нейм*/}
-                {/*</a>*/}.
+                на 4м курсе и работаю Frontend разработчиком в{' '}
+                <a
+                    href="https://travel.yandex.ru/"
+                    target="_blank"
+                    className="text-travel"
+                >
+                    Яндекс Путешествиях
+                </a>
+                .
             </motion.span>
         </section>
     );

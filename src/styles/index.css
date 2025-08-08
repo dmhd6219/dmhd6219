@@ -4,6 +4,7 @@
 :root {
     --innopolis-color: #40ba21;
     --yandex-color: #ffcc00;
+    --travel-color: #7b5cf7;
 }
 
 @theme {
@@ -29,6 +30,7 @@
 
     --color-innopolis: var(--innopolis-color);
     --color-yandex: var(--yandex-color);
+    --color-travel: var(--travel-color);
 
     --radius: 0.5rem;
     --radius-lg: var(--radius);

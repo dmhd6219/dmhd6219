@@ -1,10 +1,26 @@
 import IUIcon from '@/assets/iu.png';
 import SmashupIcon from '@/assets/smashup.png';
+import TravelIcon from '@/assets/travel.png';
+
 import type { InfoBlockEntry } from '@/types/info';
 
 export const experiences: InfoBlockEntry[] = [
     {
-        title: 'Передовая Инженерная Школа УИ',
+        title: 'Яндекс Путешествия',
+        subtitle: 'Frontend разработчик',
+        image: TravelIcon,
+        titleLink: 'https://travel.yandex.ru/',
+        rightSection: 'Июль 2025 - Настоящее Время',
+        description: '',
+        bullets: [
+            'Самостоятельно реализовал функциональность «под ключ»: от проработки бизнес-требований и взаимодействия с бэкенд-командами до полной реализации на фронтенде.',
+            'Участвовал в согласованиях API и принимал архитектурные решения по реализации фичи.',
+            'Исправлял критичные баги: как визуальные (включая платформо-специфичные), так и связанные с безопасностью.',
+        ],
+        badges: ['React', 'TypeScript', 'Redux'],
+    },
+    {
+        title: 'ПИШ УИ',
         subtitle: 'Frontend разработчик',
         image: IUIcon,
         titleLink: 'https://engineerschool.innopolis.university/',

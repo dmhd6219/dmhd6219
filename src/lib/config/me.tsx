@@ -58,8 +58,8 @@ export const githubRepo = {
 };
 
 export const city = {
-    name: 'Иннополис',
-    href: 'https://ru.wikipedia.org/wiki/Иннополис',
+    name: 'Москва',
+    href: 'https://ru.wikipedia.org/wiki/Москва',
 };
 
 interface Nickname {
